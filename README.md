@@ -24,13 +24,16 @@ Finally, if you have to explore the detail of your data, the only way that uses 
 ![new-repository-button](demo/detail_compare.png)
 
 <p align="center">
-![new-repository-button](demo/africanart.jpg)
+<img src="demo/africanart.jpg" alt="drawing" width="200px"/>
 </p>
 
 
 ## Which colors can I use?
 A coarsened color palette used by colormap_CD.m is shown below:
-![new-repository-button](demo/reference2.png)
+
+<p align="center">
+<img src="demo/reference2.png" alt="drawing" width="450px"/>
+</p>
 
 ## Input arguments
 ```
