@@ -23,12 +23,17 @@ Or if we compare with the __hot__ colormap, again colors are not distinguishable
 Finally, if you have to explore the detail of your data, the only way that uses colormaps coming with Matlab is __lines__, which generates a painting of Picasso >_<||| But __colormap_CD.m__ allows you to examine the details of data easily and clearly.
 ![new-repository-button](demo/detail_compare.png)
 
-![new-repository-button](demo/africanart.jpg)
+<p align="center">
+<img src="demo/africanart.jpg" alt="drawing" width="200px"/>
+</p>
 
 
 ## Which colors can I use?
 A coarsened color palette used by colormap_CD.m is shown below:
-![new-repository-button](demo/reference2.png)
+
+<p align="center">
+<img src="demo/reference2.png" alt="drawing" width="450px"/>
+</p>
 
 ## Input arguments
 ```
