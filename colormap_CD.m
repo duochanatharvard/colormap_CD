@@ -105,7 +105,7 @@ function RGB_out = colormap_CD(hue,brt,gry,num)
     if size(hue,1) == 1,
         RGB_out = RGB{1};
     elseif size(hue,1) == 2,
-        RGB_out = [flipud(RGB{2}); RGB{1}];    
+        RGB_out = [flipud(RGB{1}); RGB{2}];    
     else
         RGB_out = [];
         for i = 1:numel(RGB)
