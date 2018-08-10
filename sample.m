@@ -1,15 +1,15 @@
 clear;
 
-case_id = 4;
+case_id = 3;
 switch case_id,
     case 1,
-        col = colormap_CD([0.16  .89;],[1 .3],[0 0],12);
+        col = colormap_CD([0.16  0.89;],[1 0.3],[0 0],12);
         colormap_name = 'hot';
     case 2,
-        col = colormap_CD([0.25  .9;.45 .75],[.7 .35],[0 0],6);
+        col = colormap_CD([0.45 0.70; 0.25 0.9],[0.7 0.35],[0 0],6);
         colormap_name = 'jet';
     case 3,
-        col = CDF_colormap2([0.08  .95;.45 .7],[1 .35],[0 0],6);
+        col = colormap_CD([ 0.45 0.7; 0.08 0.95],[1 .35],[0 0],6);
         colormap_name = 'b2r';
     case 4,
         col = colormap_CD([.96 .16],[.3 .8],[0 0],12);
@@ -18,7 +18,7 @@ switch case_id,
         col = colormap_CD([0 1/6 1/3 2/3 5/6 1]',[0.9 .35],[0 0 0 0 0 1],5);
         colormap_name = 'detail';
     case 6,
-        col = CDF_colormap2([0.08  .95;.45 .7],[.95 .35],[0 1],8);
+        col = colormap_CD([ 0.45 0.7; 0.08  .95],[.95 .35],[1 0],8);
         col = col([1:8 10:2:end],:);
         colormap_name = 'k2r';
 end
