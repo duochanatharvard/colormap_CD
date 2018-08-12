@@ -113,7 +113,7 @@ function RGB_out = colormap_CD(hue,brt,gry,num)
         end
     end
     
-    colormap(RGB_out);
+    colormap(gca,RGB_out);
 
 end
 
