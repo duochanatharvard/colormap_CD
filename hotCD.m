@@ -26,7 +26,7 @@ function col = hotCD(num,hue)
     % *********************************************************************
     switch hue,
         case 'r',
-            col = colormap_CD([0.25 0.9],[1 .35],[0],num);
+            col = colormap_CD([0.15 0.9],[1 .35],[0],num);
         case 'y',
             col = colormap_CD([1/6 0.1],[1 .2],[0],num);
         case 'g',

@@ -1,6 +1,6 @@
 clear;
 
-for case_id = 14:22
+for case_id = 14
     switch case_id,
         case 1,
             col = colormap_CD([0.16  0.89;],[1 0.3],[0 0],12);
@@ -69,6 +69,12 @@ for case_id = 14:22
         case 22,
             col = detailCD(6,'double');
             colormap_name = 'detailCD_double'; 
+        case 23,
+            col = b2rCD(9);
+            colormap_name = 'b2rCD_9';
+        case 24,
+            col = flipud(detailCD(6,'double'));
+            colormap_name = 'detailCD_double_rev'; 
     end
 
     figure(1); clf; hold on;
