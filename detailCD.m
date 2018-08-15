@@ -12,8 +12,7 @@ function col = detailCD(num,name)
     % *********************************************************************
     % Parse input arguments
     % ********************************************************************* 
-    if ~exist('num','var')  num = 12; end
-    if ~exist('num_hue','var')  num_hue = 6;  end
+    if ~exist('num','var')  num = 6; end
     if ~exist('name','var') name = 'single'; end 
 
     % *********************************************************************
