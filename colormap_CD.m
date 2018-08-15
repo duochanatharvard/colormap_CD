@@ -47,7 +47,7 @@
 % 
 % num: number of colors in each group of hue
 
-function RGB_out = colormap_CD(hue,brt,gry,num)
+function RGB_out = colormap_CD(hue,brt,gry,num,do_disp)
 
     % *********************************************************************
     % If input size is one in the second dimension, repeat the matrix
@@ -90,6 +90,9 @@ function RGB_out = colormap_CD(hue,brt,gry,num)
             brt_intp = interp1([1 num(ct)],brt(ct,:),[1:num(ct)]);
         end
         
+        col_intp(col_intp < 0) = col_intp(col_intp < 0) + 1;
+        col_intp(col_intp > 1) = col_intp(col_intp > 1) - 1;
+        
         mu = interp1([0 1/12 1/6 1/3 1/2 2/3 5/6 1],[.75 .85 .85 .7 .55 .8 .65 .75],col_intp,'spline');
         a  = 4 * (1-mu);
         gry_intp = a .* (brt_intp - 0.5).^2 + mu;
@@ -113,7 +116,12 @@ function RGB_out = colormap_CD(hue,brt,gry,num)
         end
     end
     
-    colormap(gca,RGB_out);
+
+    if ~exist('do_disp','var'), do_disp = 1; end
+    
+    if do_disp ~= 0,
+        colormap(gca,RGB_out);
+    end
 
 end
 
