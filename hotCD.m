@@ -9,7 +9,7 @@
 % 'c': cyan
 % 'b': blue
 % 'm': magenta
-% 'g': gray
+% 'gry': gray
 %
 % Last update: 2018-08-14
 
@@ -43,7 +43,7 @@ function col = hotCD(num,hue)
             col = colormap_CD([0.5 0.65],[1 .25],[0],num);
         case 'p',
             col = colormap_CD([1 0.8],[1 .2],[0],num);
-        case 'g',
+        case 'gry',
             col = colormap_CD([1 0.8],[1 .2],[1],num);
     end
 end
