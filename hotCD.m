@@ -19,7 +19,7 @@ function col = hotCD(num,hue)
     % Parse input arguments
     % ********************************************************************* 
     if ~exist('num','var')  num = 12; end
-    if ~exist('hue','var') name = 'r'; end 
+    if ~exist('hue','var')  hue = 'r'; end 
 
     % *********************************************************************
     % Generate colormap
@@ -35,7 +35,7 @@ function col = hotCD(num,hue)
             col = colormap_CD([0.52 0.48],[1 .2],[0],num);
         case 'b',
             col = colormap_CD([0.5 0.65],[1 .25],[0],num);
-        case 'p',
+        case 'm',
             col = colormap_CD([1 0.8],[1 .2],[0],num);
         case 'gry',
             col = colormap_CD([1 0.8],[1 .2],[1],num);
